@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="loadxmldoc.js"></script>
+</head>
+<body>
+<a href="name.html">name</a>
+<a href="main.html">main</a>
+
+<p>ghhhb</p>
+<?php
+echo "hello"
+?>
+
+<script>
+xmlDoc=loadXMLDoc("books.xml");
+
+x=xmlDoc.getElementsByTagName("year");
+for (i=0;i<x.length;i++)
+{ 
+	document.write(x[i].childNodes[0].nodeValue);
+	document.write("<br>");
+}
+</script>
+</body>
+</html>
+
+
+
+<!-- jhb -->
